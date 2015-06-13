@@ -8,7 +8,17 @@ chrome.runtime.sendMessage({
 
 // Setup communication between chrome extension and tab
 chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
-	if ((message.from === 'popup') && (message.subject === 'getDOM')) {
-		sendResponse(document.documentElement.outerHTML);
+	if (message.from === 'popup') {
+		switch (message.subject) {
+			case 'getDOM': {
+				sendResponse(document.documentElement.outerHTML);
+			} break;
+			case 'getURL': {
+				sendResponse(document.location.href);
+			} break;
+			default: {
+				sendResponse(false);
+			} break;
+		}
 	}
 });
