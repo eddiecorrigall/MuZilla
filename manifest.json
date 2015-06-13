@@ -9,7 +9,7 @@
 	"description": "Some kind of music thing",
 
 	"icons": {
-		"128": "assets/icon-final.png"
+		"128": "assets/icon.png"
 	},
 
 	"background": {
@@ -28,7 +28,7 @@
 		"default_title": "MuZilla",
 		"default_popup": "src/popup.html",
 		"default_icon": {
-			"128": "assets/icon-final.png"
+			"128": "assets/icon.png"
 		}
 	},
 
