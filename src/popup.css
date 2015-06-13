@@ -1,0 +1,12 @@
+body {
+	width: 300px;
+	height: 250px;
+}
+
+album.img {
+	display: block;
+	margin: auto auto;
+	width: 64px;
+	height: 64px;
+	border-radius: 8px;
+}
