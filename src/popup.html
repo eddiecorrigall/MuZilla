@@ -8,14 +8,25 @@
 		<script type="text/javascript" src="jquery.js"></script>
 		<script type="text/javascript" src="colorFetch.js"></script>
 		<script type="text/javascript" src="popup.chrome.js"></script>
+		<script>
+		</script>
 	</head>
 	<body>
-		<img id="loader" src="http://i.stack.imgur.com/FhHRx.gif" alt="loading..." />
-		<div class="album">
-			<img id="album_image" />
-			<div id="album_title">...</div>
-			<div id="album_artist">...</div>
-			<div id="album_info">...</div>
+		<div class="popup_box" style="background: #A4C639">
+			<img class="loading hidden" src="http://sierrafire.cr.usgs.gov/images/loading.gif" alt="Loading..."/>
+			<!-- Eddie: Add the JS to turn loader OFF and loaded ON! -->
+			<div class="loaded">
+				<h1 class="colour">&#35;A4C639</h1>
+				<!-- Insert the average colour here? -->
+				<a class="art" href="#">
+					<img class="album_art" />
+					<img class="play" src="../assets/play.png">
+					<img class="pause hidden" src="../assets/pause.png">
+				</a>
+				<div class="album_artist">Artist</div>
+				<div class="album_title">Album</div>
+			</div>
 		</div>
-	</body>
+	</div>
+</body>
 </html>

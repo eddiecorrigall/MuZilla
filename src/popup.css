@@ -1,3 +1,7 @@
+.hidden {
+	display: none;
+}
+
 .popup_box {
 	text-align: center;
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -5,29 +9,51 @@
 	padding: 20px 0;
 }
 
-.popup_box h1 {
+.popup_box .loading {
+	height: 250px;
+	padding: 10px;
+}
+
+.popup_box .loaded h1 {
 	color: rgba(255, 255, 255, 0.6);
 	margin: 0;
 }
 
-.popup_box .art {
+.popup_box .loaded .art {
 	display: block;
+	position: relative;
 	width: 200px;
 	height: 200px;
 	margin: 10px auto 20px;
+}
+
+.popup_box .loaded .art img {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.popup_box .loaded .art img.play, .popup_box .loaded .art img.pause {
+	top: 50px;
+	left: 50px;
+}
+
+.popup_box .loaded .art img.album_art {
+	width: 200px;
+	height: 200px;
 	background: rgba(255, 255, 255, 0.1);
 }
 
-.popup_box .album_artist, .popup_box .album_title {
+.popup_box .loaded .album_artist, .popup_box .loaded .album_title {
 	color: rgba(0, 0, 0, 0.7);
 }
 
-.popup_box .album_artist {
+.popup_box .loaded .album_artist {
 	font-size: 16pt;
 	line-height: 90%;
 }
 
-.popup_box .album_title {
+.popup_box .loaded .album_title {
 	font-size: 18pt;
 	font-weight: bold;
 }
@@ -37,5 +63,4 @@ album.img {
 	margin: auto auto;
 	width: 64px;
 	height: 64px;
-	border-radius: 8px;
 }
