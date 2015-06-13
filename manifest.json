@@ -5,11 +5,11 @@
 	"version": "1",
 
 	// Other
-	
+
 	"description": "Some kind of music thing",
-	
+
 	"icons": {
-		"128": "icon_128.png"
+		"128": "assets/icon-final.png"
 	},
 
 	"background": {
@@ -28,7 +28,7 @@
 		"default_title": "MuZilla",
 		"default_popup": "src/popup.html",
 		"default_icon": {
-			"128": "icon_128.png"
+			"128": "assets/icon-final.png"
 		}
 	},
 
