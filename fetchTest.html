@@ -1,0 +1,20 @@
+<html>
+<script src="http://code.jquery.com/jquery-2.1.4.js"></script>
+<script src="/src/colorFetch.js"></script>
+
+<script>
+
+$(function() {
+	var color = "309070";
+	document.body.bgColor = color;
+	getAlbumForColor(color, "http://google.com", function(err, data) {
+		console.log("Got error: ", err);
+		console.log("Got data back: ", data);
+		$(document.body).append("<img src='" + data.art_url + "' />");
+		$(document.body).append(data.artist);
+		$(document.body).append(data.name);
+	});
+});
+
+</script>
+</html>
