@@ -4,16 +4,22 @@
 	"name": "MuZilla",
 	"version": "1",
 
-	// Recommended
-	// "default_locale": "en",
+	// Other
+	
 	"description": "Some kind of music thing",
-	// "icons": {},
+	
+	"icons": {
+		"128": "icon_128.png"
+	},
 
-	// Pick one (or none)
-	// "browser_action": {},
-	// "page_action": {},
+	"browser_action": {
+		"default_title": "MuZilla",
+		"default_popup": "src/popup.html",
+		"default_icon": {
+			"128": "icon_128.png"
+		}
+	},
 
-	// Optional
 	"permissions": [
 		"<all_urls>",
 		"storage",
