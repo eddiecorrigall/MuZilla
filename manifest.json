@@ -1,1 +1,22 @@
-{}
+{
+	// Required
+	"manifest_version": 2,
+	"name": "MuZilla",
+	"version": "1",
+
+	// Recommended
+	// "default_locale": "en",
+	"description": "Some kind of music thing",
+	// "icons": {},
+
+	// Pick one (or none)
+	// "browser_action": {},
+	// "page_action": {},
+
+	// Optional
+	"permissions": [
+		"<all_urls>",
+		"storage",
+		"unlimitedStorage"
+	]
+}
