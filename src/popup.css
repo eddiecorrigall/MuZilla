@@ -1,25 +1,21 @@
-.hidden {
-	display: none;
-}
-
-.popup_box {
+.popup {
 	text-align: center;
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
 	width: 300px;
 	padding: 20px 0;
 }
 
-.popup_box .loading {
+.popup #loader {
 	height: 250px;
 	padding: 10px;
 }
 
-.popup_box .loaded h1 {
+.popup #album h1 {
 	color: rgba(255, 255, 255, 0.6);
 	margin: 0;
 }
 
-.popup_box .loaded .art {
+.popup #album #album_view {
 	display: block;
 	position: relative;
 	width: 200px;
@@ -27,38 +23,38 @@
 	margin: 10px auto 20px;
 }
 
-.popup_box .loaded .art img {
+.popup #album #album_view img {
 	position: absolute;
 	top: 0;
 	left: 0;
 }
 
-.popup_box .loaded .art img.play, .popup_box .loaded .art img.pause {
+.popup #album #album_view img.play, .popup #album .album_view img.pause {
 	top: 50px;
 	left: 50px;
 }
 
-.popup_box .loaded .art img.album_art {
+.popup #album #album_view img.album_art {
 	width: 200px;
 	height: 200px;
 	background: rgba(255, 255, 255, 0.1);
 }
 
-.popup_box .loaded .album_artist, .popup_box .loaded .album_title {
+.popup #album #album_artist, .popup #album #album_title {
 	color: rgba(0, 0, 0, 0.7);
 }
 
-.popup_box .loaded .album_artist {
+.popup #album #album_artist {
 	font-size: 16pt;
 	line-height: 90%;
 }
 
-.popup_box .loaded .album_title {
+.popup #album #album_title {
 	font-size: 18pt;
 	font-weight: bold;
 }
 
-album.img {
+#album_view img {
 	display: block;
 	margin: auto auto;
 	width: 64px;

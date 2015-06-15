@@ -19,7 +19,12 @@
 
 	"content_scripts": [{
 		"matches": [ "<all_urls>" ],
-		"js": [ "src/content.chrome.js" ],
+		"js": [
+			// All scripts required by content script
+			"src/jquery.js",
+			"src/tinycolor.js",
+			"src/content.chrome.js"
+		],
 		"run_at": "document_idle",
 		"all_frames": false
 	}],

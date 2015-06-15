@@ -3,28 +3,26 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>MuZilla - Popup</title>
-		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="popup.css" type="text/css" />
+		<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" />
+		<link type="text/css" rel="stylesheet" href="popup.css" />
 		<script type="text/javascript" src="jquery.js"></script>
+		<!-- <script type="text/javascript" src="tinycolor.js"></script> -->
 		<script type="text/javascript" src="colorFetch.js"></script>
 		<script type="text/javascript" src="popup.chrome.js"></script>
-		<script>
-		</script>
 	</head>
 	<body>
-		<div class="popup_box" style="background: #A4C639">
-			<img class="loading hidden" src="http://sierrafire.cr.usgs.gov/images/loading.gif" alt="Loading..."/>
+		<div class="popup">
+			<h1 id="color">...</h1>
+			<img id="loader" class="loading hidden" src="http://sierrafire.cr.usgs.gov/images/loading.gif" alt="Loading..."/>
 			<!-- Eddie: Add the JS to turn loader OFF and loaded ON! -->
-			<div class="loaded">
-				<h1 class="colour">&#35;A4C639</h1>
+			<div id="album">
 				<!-- Insert the average colour here? -->
-				<a class="art" href="#">
-					<img class="album_art" src="../demo/cover.jpg"/>
-					<img class="play hidden" src="../assets/play.png">
-					<img class="pause hidden" src="../assets/pause.png">
+				<a id="album_view" href="#">
+					<img id="album_cover" class="album_art" /> <!-- src="../demo/cover.jpg"/> -->
+					<img id="album_mode" />
 				</a>
-				<div class="album_artist">Weezer</div>
-				<div class="album_title">Green Album</div>
+				<div id="album_artist">[Artist]</div>
+				<div id="album_title">[Album]</div>
 			</div>
 		</div>
 	</div>
